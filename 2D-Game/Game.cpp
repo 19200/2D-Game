@@ -1,5 +1,7 @@
 #include "Game.h"
 
+SDL_Texture *playerTex;
+
 Game::Game() {}
 
 Game::~Game() {}
@@ -27,9 +29,13 @@ void Game::init(const char* title, int xpos, int ypos, int width, int hieght, bo
 
 		isRunning = true;
 	}
-	else {
-		isRunning = false;
+
+	SDL_Surface* tmpSurface = IMG_Load("assets//Individual Sprites//adventurer-idle-00.png");
+	if (!tmpSurface) {
+		std::cout << "Failed to load image: " << IMG_GetError() << std::endl;
 	}
+	playerTex = SDL_CreateTextureFromSurface(renderer, tmpSurface);
+	SDL_FreeSurface(tmpSurface);
 }
 
 void Game::handleEvents() {
@@ -48,6 +54,7 @@ void Game::update() {
 
 void Game::render() {
 	SDL_RenderClear(renderer);
+	SDL_RenderCopy(renderer, playerTex, NULL, NULL);
 	SDL_RenderPresent(renderer);
 }
 

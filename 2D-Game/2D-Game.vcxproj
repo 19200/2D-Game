@@ -70,19 +70,23 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>D:\SDL2_image\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\SDL2_image\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>D:\SDL2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\SDL2_image\include;D:\SDL2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>D:\SDL2\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\SDL2_image\lib\x86;D:\SDL2\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -138,6 +142,117 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="assets\Individual Sprites\adventurer-air-attack-3-end-00.png" />
+    <Image Include="assets\Individual Sprites\adventurer-air-attack-3-end-01.png" />
+    <Image Include="assets\Individual Sprites\adventurer-air-attack-3-end-02.png" />
+    <Image Include="assets\Individual Sprites\adventurer-air-attack1-00.png" />
+    <Image Include="assets\Individual Sprites\adventurer-air-attack1-01.png" />
+    <Image Include="assets\Individual Sprites\adventurer-air-attack1-02.png" />
+    <Image Include="assets\Individual Sprites\adventurer-air-attack1-03.png" />
+    <Image Include="assets\Individual Sprites\adventurer-air-attack2-00.png" />
+    <Image Include="assets\Individual Sprites\adventurer-air-attack2-01.png" />
+    <Image Include="assets\Individual Sprites\adventurer-air-attack2-02.png" />
+    <Image Include="assets\Individual Sprites\adventurer-air-attack3-loop-00.png" />
+    <Image Include="assets\Individual Sprites\adventurer-air-attack3-loop-01.png" />
+    <Image Include="assets\Individual Sprites\adventurer-air-attack3-rdy-00.png" />
+    <Image Include="assets\Individual Sprites\adventurer-attack1-00.png" />
+    <Image Include="assets\Individual Sprites\adventurer-attack1-01.png" />
+    <Image Include="assets\Individual Sprites\adventurer-attack1-02.png" />
+    <Image Include="assets\Individual Sprites\adventurer-attack1-03.png" />
+    <Image Include="assets\Individual Sprites\adventurer-attack1-04.png" />
+    <Image Include="assets\Individual Sprites\adventurer-attack2-00.png" />
+    <Image Include="assets\Individual Sprites\adventurer-attack2-01.png" />
+    <Image Include="assets\Individual Sprites\adventurer-attack2-02.png" />
+    <Image Include="assets\Individual Sprites\adventurer-attack2-03.png" />
+    <Image Include="assets\Individual Sprites\adventurer-attack2-04.png" />
+    <Image Include="assets\Individual Sprites\adventurer-attack2-05.png" />
+    <Image Include="assets\Individual Sprites\adventurer-attack3-00.png" />
+    <Image Include="assets\Individual Sprites\adventurer-attack3-01.png" />
+    <Image Include="assets\Individual Sprites\adventurer-attack3-02.png" />
+    <Image Include="assets\Individual Sprites\adventurer-attack3-03.png" />
+    <Image Include="assets\Individual Sprites\adventurer-attack3-04.png" />
+    <Image Include="assets\Individual Sprites\adventurer-attack3-05.png" />
+    <Image Include="assets\Individual Sprites\adventurer-cast-00.png" />
+    <Image Include="assets\Individual Sprites\adventurer-cast-01.png" />
+    <Image Include="assets\Individual Sprites\adventurer-cast-02.png" />
+    <Image Include="assets\Individual Sprites\adventurer-cast-03.png" />
+    <Image Include="assets\Individual Sprites\adventurer-cast-loop-00.png" />
+    <Image Include="assets\Individual Sprites\adventurer-cast-loop-01.png" />
+    <Image Include="assets\Individual Sprites\adventurer-cast-loop-02.png" />
+    <Image Include="assets\Individual Sprites\adventurer-cast-loop-03.png" />
+    <Image Include="assets\Individual Sprites\adventurer-crnr-clmb-00.png" />
+    <Image Include="assets\Individual Sprites\adventurer-crnr-clmb-01.png" />
+    <Image Include="assets\Individual Sprites\adventurer-crnr-clmb-02.png" />
+    <Image Include="assets\Individual Sprites\adventurer-crnr-clmb-03.png" />
+    <Image Include="assets\Individual Sprites\adventurer-crnr-clmb-04.png" />
+    <Image Include="assets\Individual Sprites\adventurer-crnr-grb-00.png" />
+    <Image Include="assets\Individual Sprites\adventurer-crnr-grb-01.png" />
+    <Image Include="assets\Individual Sprites\adventurer-crnr-grb-02.png" />
+    <Image Include="assets\Individual Sprites\adventurer-crnr-grb-03.png" />
+    <Image Include="assets\Individual Sprites\adventurer-crnr-jmp-00.png" />
+    <Image Include="assets\Individual Sprites\adventurer-crnr-jmp-01.png" />
+    <Image Include="assets\Individual Sprites\adventurer-crouch-00.png" />
+    <Image Include="assets\Individual Sprites\adventurer-crouch-01.png" />
+    <Image Include="assets\Individual Sprites\adventurer-crouch-02.png" />
+    <Image Include="assets\Individual Sprites\adventurer-crouch-03.png" />
+    <Image Include="assets\Individual Sprites\adventurer-die-00.png" />
+    <Image Include="assets\Individual Sprites\adventurer-die-01.png" />
+    <Image Include="assets\Individual Sprites\adventurer-die-02.png" />
+    <Image Include="assets\Individual Sprites\adventurer-die-03.png" />
+    <Image Include="assets\Individual Sprites\adventurer-die-04.png" />
+    <Image Include="assets\Individual Sprites\adventurer-die-05.png" />
+    <Image Include="assets\Individual Sprites\adventurer-die-06.png" />
+    <Image Include="assets\Individual Sprites\adventurer-fall-00.png" />
+    <Image Include="assets\Individual Sprites\adventurer-fall-01.png" />
+    <Image Include="assets\Individual Sprites\adventurer-hurt-00.png" />
+    <Image Include="assets\Individual Sprites\adventurer-hurt-01.png" />
+    <Image Include="assets\Individual Sprites\adventurer-hurt-02.png" />
+    <Image Include="assets\Individual Sprites\adventurer-idle-00.png" />
+    <Image Include="assets\Individual Sprites\adventurer-idle-01.png" />
+    <Image Include="assets\Individual Sprites\adventurer-idle-02.png" />
+    <Image Include="assets\Individual Sprites\adventurer-idle-03.png" />
+    <Image Include="assets\Individual Sprites\adventurer-idle-2-00.png" />
+    <Image Include="assets\Individual Sprites\adventurer-idle-2-01.png" />
+    <Image Include="assets\Individual Sprites\adventurer-idle-2-02.png" />
+    <Image Include="assets\Individual Sprites\adventurer-idle-2-03.png" />
+    <Image Include="assets\Individual Sprites\adventurer-items-00.png" />
+    <Image Include="assets\Individual Sprites\adventurer-items-01.png" />
+    <Image Include="assets\Individual Sprites\adventurer-items-02.png" />
+    <Image Include="assets\Individual Sprites\adventurer-jump-00.png" />
+    <Image Include="assets\Individual Sprites\adventurer-jump-01.png" />
+    <Image Include="assets\Individual Sprites\adventurer-jump-02.png" />
+    <Image Include="assets\Individual Sprites\adventurer-jump-03.png" />
+    <Image Include="assets\Individual Sprites\adventurer-ladder-climb-00.png" />
+    <Image Include="assets\Individual Sprites\adventurer-ladder-climb-01.png" />
+    <Image Include="assets\Individual Sprites\adventurer-ladder-climb-02.png" />
+    <Image Include="assets\Individual Sprites\adventurer-ladder-climb-03.png" />
+    <Image Include="assets\Individual Sprites\adventurer-run-00.png" />
+    <Image Include="assets\Individual Sprites\adventurer-run-01.png" />
+    <Image Include="assets\Individual Sprites\adventurer-run-02.png" />
+    <Image Include="assets\Individual Sprites\adventurer-run-03.png" />
+    <Image Include="assets\Individual Sprites\adventurer-run-04.png" />
+    <Image Include="assets\Individual Sprites\adventurer-run-05.png" />
+    <Image Include="assets\Individual Sprites\adventurer-slide-00.png" />
+    <Image Include="assets\Individual Sprites\adventurer-slide-01.png" />
+    <Image Include="assets\Individual Sprites\adventurer-smrslt-00.png" />
+    <Image Include="assets\Individual Sprites\adventurer-smrslt-01.png" />
+    <Image Include="assets\Individual Sprites\adventurer-smrslt-02.png" />
+    <Image Include="assets\Individual Sprites\adventurer-smrslt-03.png" />
+    <Image Include="assets\Individual Sprites\adventurer-stand-00.png" />
+    <Image Include="assets\Individual Sprites\adventurer-stand-01.png" />
+    <Image Include="assets\Individual Sprites\adventurer-stand-02.png" />
+    <Image Include="assets\Individual Sprites\adventurer-swrd-drw-00.png" />
+    <Image Include="assets\Individual Sprites\adventurer-swrd-drw-01.png" />
+    <Image Include="assets\Individual Sprites\adventurer-swrd-drw-02.png" />
+    <Image Include="assets\Individual Sprites\adventurer-swrd-drw-03.png" />
+    <Image Include="assets\Individual Sprites\adventurer-swrd-shte-00.png" />
+    <Image Include="assets\Individual Sprites\adventurer-swrd-shte-01.png" />
+    <Image Include="assets\Individual Sprites\adventurer-swrd-shte-02.png" />
+    <Image Include="assets\Individual Sprites\adventurer-swrd-shte-03.png" />
+    <Image Include="assets\Individual Sprites\adventurer-wall-slide-00.png" />
+    <Image Include="assets\Individual Sprites\adventurer-wall-slide-01.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
