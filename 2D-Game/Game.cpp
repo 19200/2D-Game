@@ -1,4 +1,5 @@
 #include "Game.h"
+#include "TextureManager.h"
 
 SDL_Texture *playerTex;
 SDL_Rect srcR, destR;
@@ -31,12 +32,8 @@ void Game::init(const char* title, int xpos, int ypos, int width, int hieght, bo
 		isRunning = true;
 	}
 
-	SDL_Surface* tmpSurface = IMG_Load("assets//Individual Sprites//adventurer-idle-00.png");
-	if (!tmpSurface) {
-		std::cout << "Failed to load image: " << IMG_GetError() << std::endl;
-	}
-	playerTex = SDL_CreateTextureFromSurface(renderer, tmpSurface);
-	SDL_FreeSurface(tmpSurface);
+	playerTex = TextureManager::LoadTexture("assets//Individual Sprites//adventurer-idle-00.png", renderer);
+
 }
 
 void Game::handleEvents() {
