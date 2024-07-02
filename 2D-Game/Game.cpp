@@ -1,8 +1,12 @@
 #include "Game.h"
 #include "TextureManager.h"
 #include "GameObject.h"
+#include "Map.h"
 
-GameObject* player;
+GameObject *player;
+Map *map;
+
+SDL_Renderer *Game::renderer = nullptr;
 
 Game::Game() {}
 
@@ -32,8 +36,8 @@ void Game::init(const char* title, int xpos, int ypos, int width, int hieght, bo
 		isRunning = true;
 	}
 
-	player = new GameObject("assets//Individual Sprites//adventurer-idle-00.png", renderer, 0, 0);
-
+	player = new GameObject("assets//Individual Sprites//adventurer-idle-00.png", 0, 0);
+	map = new Map();
 }
 
 void Game::handleEvents() {
@@ -52,6 +56,7 @@ void Game::update() {
 
 void Game::render() {
 	SDL_RenderClear(renderer);
+	map->drawMap();
 	player->Render();
 	SDL_RenderPresent(renderer);
 }

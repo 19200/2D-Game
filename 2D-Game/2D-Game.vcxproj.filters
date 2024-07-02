@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Resource Files\Player">
+      <UniqueIdentifier>{969de032-5ac5-408b-9f06-4ca491da4aef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Background">
+      <UniqueIdentifier>{4bee1b95-3387-4efb-a50e-e3d3a339e84d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -27,6 +33,9 @@
     <ClCompile Include="GameObject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Map.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h">
@@ -38,334 +47,346 @@
     <ClInclude Include="GameObject.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="Map.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="assets\Individual Sprites\adventurer-air-attack1-00.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-air-attack1-01.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-air-attack1-02.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-air-attack1-03.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-air-attack2-00.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-air-attack2-01.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-air-attack2-02.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-air-attack-3-end-00.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-air-attack-3-end-01.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-air-attack-3-end-02.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-air-attack3-loop-00.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-air-attack3-loop-01.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-air-attack3-rdy-00.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-attack1-00.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-attack1-01.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-attack1-02.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-attack1-03.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-attack1-04.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-attack2-00.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-attack2-01.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-attack2-02.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-attack2-03.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-attack2-04.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-attack2-05.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-attack3-00.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-attack3-01.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-attack3-02.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-attack3-03.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-attack3-04.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-attack3-05.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-cast-00.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-cast-01.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-cast-02.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-cast-03.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-cast-loop-00.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-cast-loop-01.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-cast-loop-02.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-cast-loop-03.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-crnr-clmb-00.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-crnr-clmb-01.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-crnr-clmb-02.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-crnr-clmb-03.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-crnr-clmb-04.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-crnr-grb-00.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-crnr-grb-01.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-crnr-grb-02.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-crnr-grb-03.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-crnr-jmp-00.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-crnr-jmp-01.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-crouch-00.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-crouch-01.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-crouch-02.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-crouch-03.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-die-00.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-die-01.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-die-02.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-die-03.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-die-04.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-die-05.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-die-06.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-fall-00.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-fall-01.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-hurt-00.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-hurt-01.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-hurt-02.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-idle-00.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-idle-01.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-idle-02.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-idle-2-00.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-idle-2-01.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-idle-2-02.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-idle-2-03.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-idle-03.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-items-00.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-items-01.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-items-02.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-jump-00.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-jump-01.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-jump-02.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-jump-03.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-ladder-climb-00.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-ladder-climb-01.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-ladder-climb-02.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-ladder-climb-03.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-run-00.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-run-01.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-run-02.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-run-03.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-run-04.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-run-05.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-slide-00.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-slide-01.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-smrslt-00.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-smrslt-01.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-smrslt-02.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-smrslt-03.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-stand-00.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-stand-01.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-stand-02.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-swrd-drw-00.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-swrd-drw-01.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-swrd-drw-02.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-swrd-drw-03.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-swrd-shte-00.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-swrd-shte-01.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-swrd-shte-02.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-swrd-shte-03.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-wall-slide-00.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
     </Image>
     <Image Include="assets\Individual Sprites\adventurer-wall-slide-01.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Player</Filter>
+    </Image>
+    <Image Include="assets\Background\Dirt.png">
+      <Filter>Resource Files\Background</Filter>
+    </Image>
+    <Image Include="assets\Background\Grass.png">
+      <Filter>Resource Files\Background</Filter>
+    </Image>
+    <Image Include="assets\Background\Water.png">
+      <Filter>Resource Files\Background</Filter>
     </Image>
   </ItemGroup>
 </Project>
