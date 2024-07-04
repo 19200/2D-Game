@@ -50,6 +50,12 @@
     <ClInclude Include="Map.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="ECS.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Components.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="assets\Individual Sprites\adventurer-air-attack1-00.png">

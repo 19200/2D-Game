@@ -39,8 +39,8 @@ Map::Map() {
 }
 
 void Map::loadMap(int arr[20][25]) {
-	for (int row = 0; row > 20; row++) {
-		for (int column = 0; column > 25; column++) {
+	for (int row = 0; row < 20; row++) {
+		for (int column = 0; column < 25; column++) {
 			map[row][column] = arr[row][column];
 		}
 	}
