@@ -38,7 +38,7 @@ void Game::init(const char* title, int xpos, int ypos, int width, int hieght, bo
 	}
 	
 	map = new Map();
-	player.addComponent<PositionComponent>();
+	player.addComponent<TransformComponent>();
 	player.addComponent<SpriteComponent>("assets//Individual Sprites//adventurer-idle-00.png");
 }
 
@@ -55,6 +55,7 @@ void Game::handleEvents() {
 void Game::update() {
 	manager.refresh();
 	manager.update();
+	player.getComponent<TransformComponent>().position.Add(Vector2D(5, 0));
 }
 
 void Game::render() {
