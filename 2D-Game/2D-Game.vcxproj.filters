@@ -19,6 +19,9 @@
     <Filter Include="Resource Files\Background">
       <UniqueIdentifier>{4bee1b95-3387-4efb-a50e-e3d3a339e84d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\ECS">
+      <UniqueIdentifier>{a18eb4fc-4157-48f3-8c91-5734927f8744}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -50,11 +53,17 @@
     <ClInclude Include="Map.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="ECS.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
     <ClInclude Include="Components.h">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="ECS.h">
+      <Filter>Source Files\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteComponent.h">
+      <Filter>Source Files\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="PositionComponent.h">
+      <Filter>Source Files\ECS</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
